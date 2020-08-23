@@ -1,0 +1,604 @@
+/* varibles */
+:root{
+    --main-color:#ffffff;
+    --sec-color:#161616;
+    --shad:#0000001e;
+}
+html {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color:var(--main-color);
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--main-color);
+}
+.flexcontainer{
+    width: 60%;
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+}
+.flexcontainer > div{
+    padding: .8em;
+    border-radius:5px;
+    margin: 10px;
+    color: var(--sec-color);
+}
+.flexcontainer2{
+    width: 60%;
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+}
+.flexcontainer2 > div{
+    padding: .8em;
+    border-radius:5px;
+    margin: 10px;
+    color: var(--sec-color);
+}
+h3{
+    font-size: 2vw;
+    margin: 0.5em;
+    margin-left: 0;
+    margin-top: 0;
+    color: var(--sec-color);
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.mainitem{
+    width: 50%;
+    line-height: 2.2em;
+    background-color: var(--main-color);
+}
+.seconditem{
+    width: 35%;
+    background-color:transparent ;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* Nav-Bar */
+h1{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Baloo Tamma 2', cursive;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    flex-basis: auto;
+    font-size: 2.5rem;
+    transition: ease 0.7s color;
+    opacity: 0;
+    animation: fadein forwards 0.8s 1.5s ease;
+    -webkit-animation: fadein forwards 0.8s 1.5s ease;
+    -moz-animation: fadein forwards 0.8s 1.5s ease;
+}
+#title0{
+    animation: fadein forwards 0.8s 1.7s ease;
+    -webkit-animation: fadein forwards 0.8s 1.7s ease;
+    -moz-animation: fadein forwards 0.8s 1.7s ease;
+    opacity: 0;
+}
+#title0.show{
+    opacity: 0;
+}
+h1::selection{
+    background-color: transparent;
+}
+h1:hover{
+    cursor: pointer;
+}
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin: 0 1rem;
+}
+p{
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 0.8rem;
+    margin: 0;
+}
+.subtitle:hover{
+    cursor: pointer;
+}
+.subtitle::selection{
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    padding: .25em 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: rgba(255, 255, 255, 0.712);
+}
+.active{
+    color: #ffffff;
+    border-bottom: 2px #00aeff solid;
+}
+.active:hover{
+    color: #dadada;
+    border-bottom: 2px #00aeff solid;
+}
+span{
+    color: #00ccff;
+}
+span::selection{
+    background-color: transparent;
+}
+span:hover{
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+.first-part{
+    background-image: linear-gradient(to right bottom, #00aeff, #00f7ff);
+    padding: 1em;
+}
+.in-line{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav{
+    top: 0;
+    background-color: transparent;
+    position: absolute;
+    padding: 0.5em 0;
+    z-index: 1;
+    width: 60%;
+    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+}
+.main-image{
+    background-image: url('img/3687414.jpg') ,linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.034));
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 28.5em 0;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+.main-text{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    transform: translate(-50%,50%);
+    color: rgb(19, 19, 19);
+    animation: text 0.5s 0.5s ease both;
+    -webkit-animation: text 0.5s 0.5s ease both;
+    -moz-animation: text 0.5s 0.5s ease both;
+}
+h4{
+    font-size: 3.5em;
+    color:#ffffff;
+    margin-bottom: 0.5em;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    transition: 0.4s ease color;
+}
+@keyframes text{
+    from{transform: translateX(-1500px);}
+    to{transform: translateX(0);}
+}
+.custom-shape-divider-bottom-1596651526 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    animation: waves 1.5s 0.7s ease both;
+    -webkit-animation: waves 1.5s 0.7s ease both;
+    -moz-animation: waves 1.5s 0.7s ease both;
+}
+
+.custom-shape-divider-bottom-1596651526 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 150px;
+}
+.custom-shape-divider-bottom-1596651526 .shape-fill {
+    fill: var(--main-color);
+}
+.main-p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    animation: text 0.5s 1s ease both;
+}
+hr{
+    height: 0.01px;
+    color: rgba(41, 41, 41, 0.06);
+    width: 58%;
+    margin: 0 auto;
+}
+@keyframes waves{
+     from{transform: translateY(30px) rotate(180deg) ;opacity:0;}
+     to{transform: translateY(0) rotate(180deg);opacity:1;}
+}
+h5{
+    font-size: 1.2rem;
+    color: var(--sec-color);
+    text-align: center;
+    margin: 0.75em;
+    margin-top: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.blocks{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 1.25rem;
+}
+.sec{
+    margin-top: 3em;
+}
+.services{
+    background-color: var(--main-color);
+    box-shadow: 0 0 12px var(--shad);
+    float: left;
+    display: block;
+    border: 1px solid rgba(20, 20, 20, 0.100);
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    width: 20%;
+    transition: 0.3s ease transform;
+    border-radius: 20px;
+    margin-top: -0.75em;
+}
+.services0{
+    background-color: var(--main-color);
+    float: left;
+    display: block;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    width: 29%;
+    border-radius: 20px;
+}
+.moving{
+animation: moving 3s forwards infinite ease;
+}
+@keyframes moving{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+.sp{
+    color: rgb(116, 116, 116);
+    font-size: 0.75rem;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: -1.2em;
+    margin-bottom: 0.6em;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.blocks:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.services:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.13);
+}
+.bl{
+    margin-top: -0.5em;
+}
+.pos{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+    line-height: 1.5rem;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 700;
+}
+.poss{
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(94, 94, 94);
+    line-height: 1.5rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.pho{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 0;
+}
+.contact{
+    width: 60%;
+    padding: .2em;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    border-radius: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+    transition: 0.3s ease all;
+}
+.phohr{
+    height: 0.01px;
+    color: rgba(202, 202, 202, 0.164);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0 2px 0 #fc8f00;
+    background-color: #ffeb33;
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    color: #d17000;
+    left: 6%;
+    position: relative;
+    width: 120px;
+    transition: 0.4s ease all;
+    animation: text 0.5s 1.3s ease both;
+    -webkit-text: 0.5s 1.3s ease both;
+    -moz-text: 0.5s 1.3s ease both;
+}
+button:hover{
+    cursor: pointer;
+    color:#b86200;
+    background-color: #fff068;
+}
+*{
+    outline: none;
+}
+.ourteam{
+    text-align: center;
+    font-size: 2.7vw;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: var(--sec-color);
+}
+#info{
+    padding: 0.25em;
+    margin: 1.5em auto;
+    font-size: 1rem;
+    display: block;
+}
+#us{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 45px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    background-color: var(--main-color);
+    padding: 20px;
+    border: 1px solid var(--sec-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 6px 6px 0 rgba(0, 252, 155, 0.438);
+}
+#us.on{
+    max-height: 200px;
+    transition: max-height 0.5s;
+    padding: 20px;
+}
+#show-more{
+    position: relative;
+    color: var(--sec-color);
+    display: block;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    padding: 0;
+    text-align: center;
+    margin-top: .85em;
+}
+#show-more:hover{
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+}
+#show-more::selection{
+    background-color: transparent;
+}
+.we{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+#us h3{
+    color:var(--sec-color);
+    font-size: 2rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.fre{
+    text-align: center;
+    font-size: 2.7vw;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: var(--sec-color);
+}
+/* animated hovering effect */
+a, a:visited {
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+a:after, a:visited:after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: white;
+  transition: 0.4s;
+}
+a:hover:after, a:visited:hover:after {
+  width: 100%;
+}
+a:hover{
+    color: rgb(231, 231, 231);
+}
+a.active:hover:after{
+    width: 0%;
+}
+footer{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.heart{
+    color: rgb(255, 0, 55);
+    text-shadow: 0 0 6px #ff0037;
+}
+.swatches span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #001025;
+    border-radius: 5px;
+    transition: 0.3s ease transform;
+}
+.swatches span:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+
+
+
+/* ---------------- */
+/* Media Queries */
+@media (max-width:1200px){
+    .flexcontainer{
+        flex-direction:column;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .flexcontainer2{
+        flex-direction:column;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .flexcontainer2{
+    flex-direction: column-reverse;
+    }
+    .mainitem{
+        width: 100%;
+    }
+    .seconditem{
+        width: 100%;
+    }
+    .in-line{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    nav li{
+        padding: .25em 0 ;
+    }
+    a{
+        font-size: 1.3rem;
+        padding: 0rem 0;
+    }
+    .main-p{
+        text-align: center,justify;
+    }
+    button{
+        margin-top:6em;
+    }
+    .enter-h4{
+        text-align: center;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    .ourteam{
+        font-size: 1.5rem;
+    }
+    .nav{
+        position: absolute;
+    }
+    #show-more{
+        width: 30%;
+    }
+    #us.on{
+        max-height: 400px;
+    }    
+    .fre{
+        font-size: 1.5rem;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .services{
+        width: 100%;
+        float: none;
+        margin-top: 2em;
+        padding: 5% 0;
+    }
+    .ourteam{
+        font-size: 2.5rem;
+    }
+    .fre{
+        font-size: 2.5rem;
+    }
+    .discover{
+        display: none;
+    }
+    .main-image{
+        padding: 28.5em 0;
+    }
+    .main-text{
+        top: 35%;
+    }
+}
